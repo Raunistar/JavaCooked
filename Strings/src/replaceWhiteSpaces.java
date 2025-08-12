@@ -6,6 +6,8 @@ public class replaceWhiteSpaces {
     System.out.print("Enter a Sentence : ");
     String str=sc.nextLine().trim();//used to trim white spaces
 
-    if ()
+    String modified = str.replaceAll("\\s+", "-");
+    System.out.println("string after replacing whitespaces with hyphen : "+modified);
+
   }
 }

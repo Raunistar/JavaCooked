@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PrintDivisors {
+public class printDivisors {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter a number to find all the divisors: ");

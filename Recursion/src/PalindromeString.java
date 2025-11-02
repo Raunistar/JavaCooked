@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class palindromeString {
+public class PalindromeString {
   public static boolean isPalindrome(String str, int left, int right) {
     if (left >= right) {
       return true;

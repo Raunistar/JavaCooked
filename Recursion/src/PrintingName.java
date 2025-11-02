@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class printingName {
+public class PrintingName {
   public static void printName(String name, int times) {
     // Base case
     if (times == 0) {

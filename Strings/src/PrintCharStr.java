@@ -1,16 +1,14 @@
 import java.util.*;
-public class lengthOfStr {
+public class PrintCharStr {
   public static void main(String[] args) {
     //taking user input
     Scanner sc=new Scanner(System.in);
     System.out.print("Enter a String: ");
     String str= sc.nextLine();
 
-    //counting length of string without length() method.
-    int count = 0;
-    for (char c : str.toCharArray()) {
-      count++;
+    // implementing logic to print each chars of a string.
+    for (int i=0;i<str.length();i++){
+      System.out.print(" "+str.charAt(i));
     }
-    System.out.println("Length: " + count);
   }
 }

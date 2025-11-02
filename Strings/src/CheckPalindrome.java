@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class checkPalindrome {
+public class CheckPalindrome {
   public static boolean isPalindrome(String str) {
     String reversed = "";
 

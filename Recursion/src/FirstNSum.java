@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class firstNSum {
+public class FirstNSum {
   public static void firstNSum(int n, int current, int sum) {
     if (current > n) {
       System.out.println("Total Sum = " + sum);

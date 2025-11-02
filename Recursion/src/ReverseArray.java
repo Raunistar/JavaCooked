@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class reverseArray {
+public class ReverseArray {
   public static void ReverseArray(int arr[], int n) {
     if (n == 0) {
       return;

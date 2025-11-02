@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class oneToN {
+public class OneToN {
   public static void printOneToN(int current ,int n){
     if (current>n)
     {

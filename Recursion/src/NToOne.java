@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class nToOne {
+public class NToOne {
 
     public static void printOneToN(int n){
       if (n<=0)

@@ -1,4 +1,4 @@
-public class fibonacci {
+public class Fibonacci {
   public static void FibonacciSequence(int n){
 
   }

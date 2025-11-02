@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class factorialN {
+public class FactorialN {
   public static int factFN(int number) {
     // Base case
     if (number == 0 || number == 1) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class checkPlaindrome {
+public class CheckPlaindrome {
   public static boolean checkPlaindrome(int number){
     int reverseNumber=0;
     int originalNumber=number;// to keep the original user input safe from becoming 0

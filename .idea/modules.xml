@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/BasicMaths/BasicMaths.iml" filepath="$PROJECT_DIR$/BasicMaths/BasicMaths.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/DSA.iml" filepath="$PROJECT_DIR$/DSA/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/DSA/HashMap/HashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCooked.iml" filepath="$PROJECT_DIR$/.idea/JavaCooked.iml" />
       <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />

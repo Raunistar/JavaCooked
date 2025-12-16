@@ -1,0 +1,23 @@
+-->Selection sort => The core idea of the selection sort is to find the min and swap with same element.
+
+dry run: let assume we have an unsorted array
+ arr=[12,4,3,7,32]
+ so in the process of selection sorting we will start with minIndexElement
+
+  let assume minIndexElement=i;
+
+  for(int i=0;i<arr.length-1;i++){
+    minIndexElement=i; // we are assuming that its the minimum element we are going to compare
+
+    //there will be one inner loop to compare and swap
+    for(int j=i+1;j<arr.length;j++){
+    //we will check that our min element is minimum in whole array or not , if not then we will assign the new minimum index.
+        if(arr[j]<arr[minIndexElement]){
+        minIndexElement=j;
+        }
+        here we will swap
+
+    }
+
+    }
+  }

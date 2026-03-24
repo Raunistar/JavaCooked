@@ -1,128 +1,205 @@
--->Selection sort => The core idea of the selection sort is to find the min and swap with same element.
+SELECTION SORT
+========================================================================
+Core Idea:
+Find the minimum element from the unsorted portion and swap it with the beginning.
 
-Core Concept
-Find the minimum element in the unsorted portion and swap it with the beginning of the unsorted portion.
+Algorithm Steps:
 
-Algorithm Steps
-Start with the first element as the minimum
-
-Compare with all remaining elements to find the actual minimum
-
-Swap the found minimum with the first element
-
-Move boundary between sorted and unsorted portions one element to the right
+1. Start with first index as minimum.
+2. Compare with remaining elements.
+3. Find actual minimum index.
+4. Swap with current index.
+5. Move boundary forward.
+6. Repeat until array sorted.
 
 Dry Run Example:
-
 Array: [12, 4, 3, 7, 32]
 
 Pass 1:
-  Assume min at index 0 (12)
-  Compare with [4,3,7,32] → min=3 at index 2
-  Swap arr[0] with arr[2] → [3, 4, 12, 7, 32]
+min = 12 → compare → min = 3
+swap → [3, 4, 12, 7, 32]
 
 Pass 2:
-  Assume min at index 1 (4)
-  Compare with [12,7,32] → min=4 at index 1
-  No swap needed → [3, 4, 12, 7, 32]
+min = 4 → no swap
 
 Pass 3:
-  Assume min at index 2 (12)
-  Compare with [7,32] → min=7 at index 3
-  Swap arr[2] with arr[3] → [3, 4, 7, 12, 32]
+min = 12 → compare → min = 7
+swap → [3, 4, 7, 12, 32]
 
-Pass 4:
-  Assume min at index 3 (12)
-  Compare with [32] → min=12 at index 3
-  No swap needed → [3, 4, 7, 12, 32]
+Sorted: [3, 4, 7, 12, 32]
 
-Sorted Array: [3, 4, 7, 12, 32]
+Time Complexity:
+Best: O(N²)
+Average: O(N²)
+Worst: O(N²)
 
-Key Points ->
-In-place sorting: Doesn't require extra memory
+Space Complexity:
+O(1)
 
-Unstable sort: Equal elements may not maintain original order
+Key Points:
+• In-place sorting
+• Unstable
+• Minimum swaps (≤ N-1)
 
-Time Complexity: Always O(n²) - even if array is sorted
+JavaScript Code:
 
-Space Complexity: O(1)
+function selectionSort(arr) {
+let n = arr.length;
 
-Comparisons: n(n-1)/2 comparisons
+for (let i = 0; i < n - 1; i++) {
+let minIndex = i;
 
-Swaps: Maximum n-1 swaps
+```
+for (let j = i + 1; j < n; j++) {
+  if (arr[j] < arr[minIndex]) {
+    minIndex = j;
+  }
+}
 
+if (minIndex !== i) {
+  [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+}
+```
 
--------------------------------------------------------------------------------------------------------Core Concept
-                                                                                                       Repeatedly compare adjacent elements and swap them if they're in wrong order. Largest elements "bubble up" to their correct position.
+}
 
-                                                                                                       Algorithm Steps
-                                                                                                       Compare first two elements, swap if needed
+return arr;
+}
 
-                                                                                                       Move to next pair, compare and swap
+Example:
+console.log(selectionSort([12, 4, 3, 7, 32]));
+===================================================================================
+BUBBLE SORT
 
-                                                                                                       Continue until end of array
+Core Idea:
+Repeatedly compare adjacent elements and swap if they are in wrong order.
+Largest elements bubble up to the end.
 
-                                                                                                       Repeat process for remaining unsorted portion
+Algorithm Steps:
 
-                                                                                                       Dry Run Example
-                                                                                                       text
-                                                                                                       Array: [12, 2, 11, 23, 4]
+1. Compare adjacent elements.
+2. Swap if needed.
+3. Continue till end.
+4. Ignore last sorted elements in next pass.
+5. Repeat until sorted.
 
-                                                                                                       Pass 1 (Compare all adjacent pairs):
-                                                                                                         (12,2) → swap → [2, 12, 11, 23, 4]
-                                                                                                         (12,11) → swap → [2, 11, 12, 23, 4]
-                                                                                                         (12,23) → no swap → [2, 11, 12, 23, 4]
-                                                                                                         (23,4) → swap → [2, 11, 12, 4, 23]
-                                                                                                         Largest element (23) now at correct position
+Dry Run:
+Array: [12, 2, 11, 23, 4]
 
-                                                                                                       Pass 2 (Ignore last element):
-                                                                                                         (2,11) → no swap → [2, 11, 12, 4, 23]
-                                                                                                         (11,12) → no swap → [2, 11, 12, 4, 23]
-                                                                                                         (12,4) → swap → [2, 11, 4, 12, 23]
-                                                                                                         Second largest (12) at correct position
+Pass 1:
+(12,2) swap → [2,12,11,23,4]
+(12,11) swap → [2,11,12,23,4]
+(23,4) swap → [2,11,12,4,23]
 
-                                                                                                       Pass 3 (Ignore last 2 elements):
-                                                                                                         (2,11) → no swap → [2, 11, 4, 12, 23]
-                                                                                                         (11,4) → swap → [2, 4, 11, 12, 23]
-                                                                                                         Third largest (11) at correct position
+Pass 2:
+(12,4) swap → [2,11,4,12,23]
 
-                                                                                                       Pass 4 (Ignore last 3 elements):
-                                                                                                         (2,4) → no swap → [2, 4, 11, 12, 23]
-                                                                                                         Array is sorted!
+Pass 3:
+(11,4) swap → [2,4,11,12,23]
 
- for this algo T.C = O(N)  -best case only if the given array is already sorted
-                     O(N^2) - worst and avg and most common
+Sorted: [2,4,11,12,23]
 
----------------------------------------------------------------------------------------------------------
--->Insertion sort => Insertion sort is a simple sorting algorithm that works like sorting playing cards in your hand: you build a sorted section one element at a time by inserting each new element into its correct position.
+Time Complexity:
+Best: O(N)  (optimized with flag)
+Average: O(N²)
+Worst: O(N²)
 
-🃏 How Insertion Sort Works
-Step 1: Assume the first element is already sorted.
+Space Complexity:
+O(1)
 
-Step 2: Pick the next element (called the key).
+Key Points:
+• Stable
+• In-place
+• Easy but inefficient
 
-Step 3: Compare the key with elements in the sorted part.
+JavaScript Code:
 
-Step 4: Shift larger elements one position to the right.
+function bubbleSort(arr) {
+let n = arr.length;
 
-Step 5: Insert the key into its correct spot.
+for (let i = 0; i < n - 1; i++) {
+let swapped = false;
 
-Step 6: Repeat until all elements are sorted.
+```
+for (let j = 0; j < n - i - 1; j++) {
+  if (arr[j] > arr[j + 1]) {
+    [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+    swapped = true;
+  }
+}
 
-👉 Think of it like arranging cards: you hold a sorted hand and keep inserting the next card where it belongs.
+if (!swapped) break;
+```
 
-⚙️ Example Walkthrough
-Suppose we want to sort [5, 3, 4, 1, 2]:
+}
 
-Start with [5] (sorted).
+return arr;
+}
 
-Insert 3: compare with 5, place before → [3, 5].
+Example:
+console.log(bubbleSort([12, 2, 11, 23, 4]));
 
-Insert 4: compare with 5, place before → [3, 4, 5].
+======================================================================
+INSERTION SORT
 
-Insert 1: place at the beginning → [1, 3, 4, 5].
+Core Idea:
+Build a sorted portion one element at a time by inserting each element into its correct position.
 
-Insert 2: place between 1 and 3 → [1, 2, 3, 4, 5].
+Like arranging playing cards in hand.
 
-for this algo T.C = O(N)  -best case only if the given array is already sorted
-                     O(N^2) - worst and avg and most common
+Algorithm Steps:
+
+1. Assume first element sorted.
+2. Pick next element (key).
+3. Compare with sorted portion.
+4. Shift larger elements right.
+5. Insert key at correct position.
+6. Repeat.
+
+Example:
+Array: [5, 3, 4, 1, 2]
+
+Insert 3 → [3,5]
+Insert 4 → [3,4,5]
+Insert 1 → [1,3,4,5]
+Insert 2 → [1,2,3,4,5]
+
+Time Complexity:
+Best: O(N)
+Average: O(N²)
+Worst: O(N²)
+
+Space Complexity:
+O(1)
+
+Key Points:
+• Stable
+• In-place
+• Efficient for small datasets
+• Good for nearly sorted arrays
+
+JavaScript Code:
+
+function insertionSort(arr) {
+let n = arr.length;
+
+for (let i = 1; i < n; i++) {
+let key = arr[i];
+let j = i - 1;
+
+```
+while (j >= 0 && arr[j] > key) {
+  arr[j + 1] = arr[j];
+  j--;
+}
+
+arr[j + 1] = key;
+```
+
+}
+
+return arr;
+}
+
+Example:
+console.log(insertionSort([5, 3, 4, 1, 2]));

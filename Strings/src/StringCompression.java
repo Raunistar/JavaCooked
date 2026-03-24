@@ -13,7 +13,7 @@ public class StringCompression {
       char current=str.charAt(i);//current value of the characters
       int count=1;//initially 1
       //to check the char are same or not to increae the count
-      while(i+1<str.length()&& str.charAt(i+1)==current){
+      while(i+1<str.length() && str.charAt(i+1)==current){
         count++;
         i++;
       }

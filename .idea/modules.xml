@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA/ChatGpt/Array/Array.iml" filepath="$PROJECT_DIR$/DSA/ChatGpt/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/BasicMaths/BasicMaths.iml" filepath="$PROJECT_DIR$/BasicMaths/BasicMaths.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/CSES-Problem SET/CSES-Problem SET.iml" filepath="$PROJECT_DIR$/DSA/CSES-Problem SET/CSES-Problem SET.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/ChatGpt/ChatGpt.iml" filepath="$PROJECT_DIR$/DSA/ChatGpt/ChatGpt.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA/DSA.iml" filepath="$PROJECT_DIR$/DSA/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/Stack/DSAQ/DSAQ.iml" filepath="$PROJECT_DIR$/DSA/Stack/DSAQ/DSAQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/DSA/HashMap/HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/HashSet/HashSet.iml" filepath="$PROJECT_DIR$/DSA/HashSet/HashSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCooked.iml" filepath="$PROJECT_DIR$/.idea/JavaCooked.iml" />
       <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/ChatGpt/Recurssion/Recurssion.iml" filepath="$PROJECT_DIR$/DSA/ChatGpt/Recurssion/Recurssion.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA/SortingAlgo/SortingAlgo.iml" filepath="$PROJECT_DIR$/DSA/SortingAlgo/SortingAlgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/Stack/Stack.iml" filepath="$PROJECT_DIR$/DSA/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/ChatGpt/StringMethods/StringMethods.iml" filepath="$PROJECT_DIR$/DSA/ChatGpt/StringMethods/StringMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/ChatGpt/Strs/Strs.iml" filepath="$PROJECT_DIR$/DSA/ChatGpt/Strs/Strs.iml" />
     </modules>
   </component>
 </project>

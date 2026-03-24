@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Sorting_Algorithm {
+  //Selection sort algorithm
   public static void selectionSort(int[] arr) {
     int n = arr.length;
     for (int i = 0; i < n-1; i++) {
@@ -25,6 +26,7 @@ public class Sorting_Algorithm {
     }
 
   }
+  //Bubble sort algorithm
   public static void bubble_sort(int[] arr) {
     int n = arr.length;
 
@@ -51,18 +53,21 @@ public class Sorting_Algorithm {
       System.out.print(num + " ");
     }
   }
+  //Insertion sort algorithm
   public static void insertion_sort(int[] arr){
+   //store arrays length in a variable
     int n=arr.length;
-    for (int i = 1; i < n; i++) {
-      int key = arr[i];   // element to insert
-      int j = i - 1;
 
-      // Shift elements greater than key to the right
-      while (j >= 0 && arr[j] > key) {
-        arr[j + 1] = arr[j];
-        j = j - 1;
+    //Boss loop to bring guest aka key
+    for(int i=1;i<n;i++){
+      int key=arr[i];
+      int j=i-1;
+      //Helper loop to create seats for the guests
+      while(j>=0 && arr[j]>key){
+        arr[j+1]=arr[j];
+        j--;
       }
-      arr[j + 1] = key;  // place key in correct position
+      arr[j + 1] = key;
     }
     // Print the sorted array
     System.out.println("After Insertion sort:");

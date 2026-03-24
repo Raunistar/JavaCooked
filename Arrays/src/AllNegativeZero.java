@@ -13,6 +13,7 @@ public class AllNegativeZero {
     for (int i = 0; i < length; i++) {
       arr[i] = sc.nextInt();
     }
+
     int temp;
     //printing the array and swaping the index 0th element with last element.
     for (int i=0;i<arr.length;i++){
